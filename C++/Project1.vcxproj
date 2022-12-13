@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{FC3598E3-B6C9-4553-807E-6A0DBCDA681E}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="addnumbers.cpp" />
+    <ClCompile Include="alternateddivision.cpp" />
+    <ClCompile Include="arithmeticval.cpp" />
+    <ClCompile Include="arraytofunc.cpp" />
+    <ClCompile Include="averagenumber2.cpp" />
+    <ClCompile Include="averagenumbers.cpp" />
+    <ClCompile Include="badequality.cpp" />
+    <ClCompile Include="badfloatcheck.cpp" />
+    <ClCompile Include="betterdie.cpp" />
+    <ClCompile Include="betterdivision.cpp" />
+    <ClCompile Include="betterfeedback.cpp" />
+    <ClCompile Include="betterinputfunc.cpp" />
+    <ClCompile Include="betterprompt.cpp" />
+    <ClCompile Include="betterrandom.cpp" />
+    <ClCompile Include="bettertimeit.cpp" />
+    <ClCompile Include="binaryconversion.cpp" />
+    <ClCompile Include="bitwiseoperator.cpp" />
+    <ClCompile Include="boolsvars.cpp" />
+    <ClCompile Include="calculator.cpp" />
+    <ClCompile Include="checkrange.cpp" />
+    <ClCompile Include="cleararray.cpp" />
+    <ClCompile Include="cmdlineargs.cpp" />
+    <ClCompile Include="computesquarerootcpp.cpp" />
+    <ClCompile Include="countdown.cpp" />
+    <ClCompile Include="counter.cpp" />
+    <ClCompile Include="countof10.cpp" />
+    <ClCompile Include="countoffive.cpp" />
+    <ClCompile Include="countton.cpp" />
+    <ClCompile Include="countup.cpp" />
+    <ClCompile Include="customsquareroot.cpp" />
+    <ClCompile Include="datetransformer.cpp" />
+    <ClCompile Include="degreesConverter.cpp" />
+    <ClCompile Include="die.cpp" />
+    <ClCompile Include="digitaltimer.cpp" />
+    <ClCompile Include="digittoword.cpp" />
+    <ClCompile Include="enhancedcheckrange.cpp" />
+    <ClCompile Include="enhancedtimeconv.cpp" />
+    <ClCompile Include="evenbetterprompt.cpp" />
+    <ClCompile Include="factorialtest.cpp" />
+    <ClCompile Include="fasterprimes.cpp" />
+    <ClCompile Include="fasterprimes2.cpp" />
+    <ClCompile Include="faultyswap.cpp" />
+    <ClCompile Include="faultytempconv.cpp" />
+    <ClCompile Include="findchar.cpp" />
+    <ClCompile Include="flexiblearrayaverage.cpp" />
+    <ClCompile Include="floatequals.cpp" />
+    <ClCompile Include="foreachexample.cpp" />
+    <ClCompile Include="gcd.cpp" />
+    <ClCompile Include="gcdprog.cpp" />
+    <ClCompile Include="globalcalculator.cpp" />
+    <ClCompile Include="histobar.cpp" />
+    <ClCompile Include="imprecise5th.cpp" />
+    <ClCompile Include="imprecisedifference.cpp" />
+    <ClCompile Include="integeroverflow.cpp" />
+    <ClCompile Include="iterativecountoffive.cpp" />
+    <ClCompile Include="largearrayaverage.cpp" />
+    <ClCompile Include="localfuncdef1.cpp" />
+    <ClCompile Include="localfuncdef2.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="makerandomvector.cpp" />
+    <ClCompile Include="maxmin.cpp" />
+    <ClCompile Include="measureprimespeed.cpp" />
+    <ClCompile Include="moreefficientprimes.cpp" />
+    <ClCompile Include="newcheckrange.cpp" />
+    <ClCompile Include="orbitdist.cpp" />
+    <ClCompile Include="organization1.cpp" />
+    <ClCompile Include="organization2.cpp" />
+    <ClCompile Include="organization3.cpp" />
+    <ClCompile Include="passbyvalue.cpp" />
+    <ClCompile Include="pointerarithmetic.cpp" />
+    <ClCompile Include="Pointerprint.cpp" />
+    <ClCompile Include="pointerprint2.cpp" />
+    <ClCompile Include="powersof10.cpp" />
+    <ClCompile Include="powersof10justified.cpp" />
+    <ClCompile Include="powersof10withcommas.cpp" />
+    <ClCompile Include="prevspost.cpp" />
+    <ClCompile Include="prime.cpp" />
+    <ClCompile Include="primefuc.cpp" />
+    <ClCompile Include="primelist.cpp" />
+    <ClCompile Include="primetester.cpp" />
+    <ClCompile Include="promptwithstatic.cpp" />
+    <ClCompile Include="recursivearrayprint.cpp" />
+    <ClCompile Include="referencevar.cpp" />
+    <ClCompile Include="resizearray.cpp" />
+    <ClCompile Include="restyledigittoword.cpp" />
+    <ClCompile Include="samedifferent.cpp" />
+    <ClCompile Include="simplefloataddition.cpp" />
+    <ClCompile Include="simplefunction.cpp" />
+    <ClCompile Include="simplerandom.cpp" />
+    <ClCompile Include="simplerbinaryconversion.cpp" />
+    <ClCompile Include="sortintegers.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="addnonnegatives.cpp" />
+    <ClCompile Include="precise8th.cpp" />
+    <ClCompile Include="sqrtcmdline.cpp" />
+    <ClCompile Include="standardsquareroot.cpp" />
+    <ClCompile Include="stdarray.cpp" />
+    <ClCompile Include="swapwithpointers.cpp" />
+    <ClCompile Include="swapwithreferences.cpp" />
+    <ClCompile Include="timecondconv1.cpp" />
+    <ClCompile Include="timeconv.cpp" />
+    <ClCompile Include="timeconvcond2.cpp" />
+    <ClCompile Include="timeit.cpp" />
+    <ClCompile Include="timermodule.cpp" />
+    <ClCompile Include="timestable-1st-try.cpp" />
+    <ClCompile Include="timestable-2nd-try.cpp" />
+    <ClCompile Include="timestablefunction.cpp" />
+    <ClCompile Include="touppercase.cpp" />
+    <ClCompile Include="treefunc.cpp" />
+    <ClCompile Include="troubleshootloop.cpp" />
+    <ClCompile Include="twodimarray.cpp" />
+    <ClCompile Include="twodimvector.cpp" />
+    <ClCompile Include="unsignedoverflow.cpp" />
+    <ClCompile Include="usingsqrt.cpp" />
+    <ClCompile Include="vectoraverage.cpp" />
+    <ClCompile Include="vectoroutofbounds.cpp" />
+    <ClCompile Include="vectoroutofbounds2.cpp" />
+    <ClCompile Include="vectortofunc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="prime.h" />
+    <ClInclude Include="timermodule.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
