@@ -1,0 +1,12 @@
+[submodule "Character"]
+	path = Character
+	url = /Character
+[submodule "ATMmachine"]
+	path = ATMmachine
+	url = /ATMmachine
+[submodule "Gregs-List"]
+	path = Gregs-List
+	url = /Gregs-List
+[submodule "You-ig-oh"]
+	path = You-ig-oh
+	url = /You-ig-oh
