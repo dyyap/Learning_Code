@@ -7,8 +7,8 @@ import java.util.Scanner;
 public class bbknapsack {
 	
 	static class Item {
-		double weight;
-		int value;
+		double weight; // How it's sorted
+		int value; // What we want
 		
 		public Item(double a, int b) {
 			this.weight = a;
