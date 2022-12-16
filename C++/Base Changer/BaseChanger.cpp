@@ -9,12 +9,14 @@ std::string Base10to16(int a);
 int Base8to10(int a);
 
 
-int Base2to10(int a) {
+int Base2to10(int a) 
+{
 	int answer = 0;
 	int count = 0;
 	int final = 0;
 	std::stack <int> s;
-	while (a != 0) { 
+	while (a != 0) 
+	{ 
 		if ((a % 2) != 0)
 			s.push(pow(2,count++)*(a % 2));
 		else
@@ -22,21 +24,25 @@ int Base2to10(int a) {
 		a = a / 10;
 	}
 
-	while (!s.empty()) {
+	while (!s.empty()) 
+	{
 		final += s.top();
-		s.pop();
-		
+		s.pop();	
 	}
+
 	return final;
 
-
 }
-void Base2to8(int a) {
+
+void Base2to8(int a)
+{
 	int answer = 0;
 	int count = 0;
 	int final = 0;
 	std::stack <int> s;
-	while (a != 0) {
+
+	while (a != 0) 
+	{
 		if ((a % 2) != 0)
 			s.push(pow(8, count++) * (a % 2));
 		else
@@ -44,47 +50,46 @@ void Base2to8(int a) {
 		a = a / 10;
 	}
 
-	while (!s.empty()) {
+	while (!s.empty())
+	{
 		final += s.top();
 		s.pop();
-
 	}
+
 	std::cout << final;
-
-
 }
 
-std::string Base2to16(int a) {
-
+std::string Base2to16(int a) 
+{
 	std::cout << Base10to16(Base2to10(a));
 	return Base10to16(Base2to10(a));
-
 }
 
-void Base10to2(int a) {
-
+void Base10to2(int a) 
+{
 	std::string numb;
 	std::stack <int> s; 
-	while (a != 0) {
+	while (a != 0) 
+	{
 		s.push(a % 2); // populate the array
 		a = a / 2;
 	}
 
-	while (!s.empty()) {
+	while (!s.empty()) 
+	{
 		std::cout <<  s.top();
 		s.pop();
 	}
-
-	
-	
 }
 
-int Base8to10(int a) {
+int Base8to10(int a)
+{
 	int answer = 0;
 	int count = 0;
 	int final = 0;
 	std::stack <int> s;
-	while (a != 0) {
+	while (a != 0)
+	{
 		if ((a % 8) != 0)
 			s.push(pow(8, count++) * (a % 8));
 		else
@@ -92,7 +97,8 @@ int Base8to10(int a) {
 		a = a / 10;
 	}
 
-	while (!s.empty()) {
+	while (!s.empty()) 
+	{
 		final += s.top();
 		s.pop();
 
@@ -100,7 +106,8 @@ int Base8to10(int a) {
 	return final;
 
 }
-int HexChecker(char a) { //hex lexicon
+int HexChecker(char a) 
+{ //hex lexicon
 	switch (a) {
 	case '1': return 1;
 		break;
@@ -136,7 +143,8 @@ int HexChecker(char a) { //hex lexicon
 	}
 }
 
-char HexChecker(int a){ //hex lexicon
+char HexChecker(int a)
+{ //hex lexicon
 	switch (a) {
 	case 1: return '1';
 		break;
@@ -176,15 +184,18 @@ char HexChecker(int a){ //hex lexicon
 	}
 }
 
-std::string Base10to16(int a) {
+std::string Base10to16(int a)
+{
 	std::string numb;
 	std::stack <char> s;
-	while (a != 0) {
+	while (a != 0) 
+	{
 		s.push(HexChecker(a % 16));// populate the array
 		a = a / 16;
 	}
 
-	while (!s.empty()) {
+	while (!s.empty())
+	{
 		numb += s.top();
 		s.pop();
 	}
@@ -196,15 +207,17 @@ std::string Base10to16(int a) {
 
 
 
-void Base10to8(int a) {
+void Base10to8(int a) 
+{
 	std::stack <int> s;
-	while (a != 0) {
+	while (a != 0)
+	{
 		s.push(a % 8);
-		a = a / 8;
-
-		
+		a = a / 8;		
 	}
-	while (!s.empty()) {
+
+	while (!s.empty())
+	{
 		std::cout << s.top();
 		s.pop();
 	}
