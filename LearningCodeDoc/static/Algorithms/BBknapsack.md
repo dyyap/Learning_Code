@@ -1,6 +1,6 @@
 # Branch and Bound Knapsack
 
-*for reference : [Knapsack Branch and Bound](https://www.geeksforgeeks.org/0-1-knapsack-using-branch-and-bound/)*
+> for reference : [Knapsack Branch and Bound](https://www.geeksforgeeks.org/0-1-knapsack-using-branch-and-bound/)
 
 3 Main Methods:
 <details><summary>Bound</summary>
