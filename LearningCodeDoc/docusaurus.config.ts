@@ -20,7 +20,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'dyyap', // Usually your GitHub org/user name.
+  organizationName: 'Bwom Productions', // Usually your GitHub org/user name.
   projectName: 'LearningCode', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -39,6 +39,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.ts'),
           docItemComponent: "@theme/ApiItem",
+          routeBasePath: "/",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
@@ -66,7 +67,7 @@ const config = {
         docsPluginId: "classic", // configured for preset-classic
         config: {
           petstore: {
-            specPath: "examples/petstore.yaml",
+            specPath: "docs/Workbook/petstore.yaml",
             outputDir: "docs/petstore",
             sidebarOptions: {
               groupPathsBy: "tag",
@@ -89,10 +90,9 @@ const config = {
         },
         items: [ // Upper Nav Bar
           {
-            type: 'doc',
-            docId: 'intro',
             position: 'left',
             label: 'CodeBase',
+            to: '/category/Workbook',
           },
 
           {to: '/blog', label: 'Change-Log', position: 'left'},
@@ -116,7 +116,7 @@ const config = {
 
               {
                 label: 'CodeBase',
-                to: '/CodeBases/intro',
+                to: '/category/Workbook',
               }
             ],
           },
