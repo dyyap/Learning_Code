@@ -18,6 +18,7 @@
     "@docusaurus/preset-classic": "^3.5.2",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^1.2.1",
+    "docusaurus": "^1.14.7",
     "docusaurus-plugin-openapi-docs": "^4.0.1",
     "docusaurus-theme-openapi-docs": "^4.0.1",
     "mdx": "^0.3.1",

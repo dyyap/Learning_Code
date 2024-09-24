@@ -8,13 +8,13 @@ const sidebar: SidebarsConfig = {
         },
         {
             type: "category",
-            label: "ATM",
+            label: "Tools and Examples",
             link: {
               type: "generated-index",
-              title: "ATM API",
-              slug: "/category/ATM-api",
+              title: "Tools and Examples API",
+              slug: "/category/tools-examples-api",
             },
-            items: require("./ATM/sidebar.ts"),
+            items: require("./ToolsExamples/sidebar.ts"),
           },
     ]
 }

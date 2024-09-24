@@ -1,0 +1,47 @@
+---
+id: Generators
+title: "Generators"
+description: "Mathematical Generators"
+sidebar_label: Generators
+sidebar_position: 0
+sidebar_class_name: "post api-method"
+hide_title: true
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Number Generators"}
+>
+</Heading>
+
+
+
+# Code Base
+
+### Random Number Generator
+
+``` java
+    public double RandomNumberGenerator()
+	{
+		Random rand = new Random();
+		checkNumb = rand.nextInt(39999999) + 1;
+	  	
+		return checkNumb;
+	}
+```
+

@@ -1,0 +1,71 @@
+---
+id: ATM
+title: "ATM"
+description: "ATM Example."
+sidebar_label: ATM 
+sidebar_position: 0
+sidebar_class_name: "post api-method"
+hide_title: true
+custom_edit_url: null
+---
+
+import ApiTabs from "@theme/ApiTabs";
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import SecuritySchemes from "@theme/ApiExplorer/SecuritySchemes";
+import MimeTabs from "@theme/MimeTabs";
+import ParamsItem from "@theme/ParamsItem";
+import ResponseSamples from "@theme/ResponseSamples";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"ATM Machine"}
+>
+</Heading>
+
+
+
+Froyo's the best!
+
+# Code Base
+
+## Deposit
+
+
+
+``` java
+    public static double Deposit() 
+	{
+		Scanner lp = new Scanner(System.in);
+		System.out.println("Would you like to deposit with cash or check");
+		String ans = lp.next();
+		System.out.println("How much would you like to put in?");
+		double deposit = lp.nextInt();
+		BankAccount = BankAccount + deposit;
+		
+		return BankAccount;
+	}
+```
+
+## Withdraw
+
+``` java
+public static double Withdraw() 
+	{	
+		Scanner lp = new Scanner(System.in);
+		System.out.println("Would you like to withdraw with cash or check");
+		String ans = lp.next();
+		System.out.println("How much would you like to take out?");
+		double withdraw = lp.nextInt();
+		BankAccount = BankAccount - withdraw;
+		
+		return BankAccount;
+		
+	}
+```
