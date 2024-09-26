@@ -1,0 +1,71 @@
+---
+id: Reverse Engineering
+title: "Reverse Engineering"
+description: "Reverse Engineering fundamentals"
+sidebar_label: "Reverse Engineering"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Reverse Engineering"}
+>
+</Heading>
+
+
+To start go to the Reverse Engineering Tools section and download ghidra or Ida pro. 
+
+## x86 x64
+
+To start on reverse engineering using IDA pro or any decompiler you need to know the inner workings of the x86 language. 
+x86 is an Assembly type language and if you haven't taken it yet try and learn MIPS
+
+In the Intel Processor there are two modes of handling: **Real** and **Protected**
+
+The hierarchy of privilege of this system is based off of a **Ring Model**. Where there are "Rings" from 0-3 where ring 0 is the highest level privilege
+These rings are coded in the cs register and is also known as the **Current Privilege Level**.
+Whilst in the protected handling mode there are 9 x86 registers that are really common
+
+```
+EAX :: This is the Accumulator; Used for Arithmetic, I/O, etc
+EBX :: Base Pointer
+ECX :: Counter in Loops; Gets some interrupt value
+EDX :: Data Register 
+EDI :: Destination Register
+ESI :: Source Index; String and Array copying
+EBP :: Stack Base Pointer; Base Address of the stack
+ESP :: Stack Pointer; Top Address of the stack
+EIP :: Index Pointer; This is read only
+EFLAGS :: Tells the status of Arithmetic Operations
+ZF :: Zero Flag
+
+```
+
+Some data types of x86 are:
+- **Bytes** : 8-bits : AL, BL, CL
+- **Words** : 16-bits: AX, BX, CX
+- **Double Words**  : 32-bits: EAX, EBX, ECX
+- **Quad Words** : 64-bits: this does not exist in X86 architecture however it can be just two Double Words
+
+### Instruction Set  
+
+There are 5 main types of instructions:
+1. Immediate to Register
+2. Register to Register
+3. Immediate to Memory
+4. Register to Memory OR Memory to Register
+5. Memory to Memory
+
+In the first 4 there are 3 main instructions
+1. Read the data from memory to a register (LDR)
+2. Add one to the register (ADD)
+3. Write register to memory (STR)

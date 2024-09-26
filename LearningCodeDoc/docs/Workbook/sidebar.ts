@@ -15,7 +15,18 @@ const sidebar: SidebarsConfig = {
               slug: "/category/tools-examples-api",
             },
             items: require("./ToolsExamples/sidebar.ts"),
-          },
+        },
+        {
+            type: "category",
+            label: "Networking",
+            link: {
+              type: "generated-index",
+              title: "Tools and Examples API",
+              slug: "/category/networking",
+            },
+            items: require("./Networking/sidebar.ts"),
+        },
+      
     ]
 }
 

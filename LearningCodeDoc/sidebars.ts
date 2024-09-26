@@ -16,7 +16,7 @@
 import type {SidebarsConfig} from "@docusaurus/plugin-content-docs"
 import {versionCrumb, versionSelector,} from "docusaurus-plugin-openapi-docs/lib/sidebars/utils";
 import petstoreVersions from "./docs/Workbook/versions.json";
-import WorkbookSidebar from "./docs/Workbook/sidebar";
+import WorkbookSidebar from "./docs/Workbook/sidebar"
 const sidebars = {
   // By default, Docusaurus generates a sidebar from the docs folder structure
   tutorialSidebar: [
