@@ -1,0 +1,91 @@
+---
+id: Substitution Cyphers
+title: "Substitution Cyphers"
+description: "Substitution Cyphers"
+sidebar_label: "Substitution Cyphers"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Substitution Cyphers"}
+>
+</Heading>
+
+
+Ciphers in which each letter is replaced with another letter.
+
+## Caesar Cipher
+
+Given Message
+
+```
+Hello World
+```
+
+You shift the letters of the alphabet 
+
+<p align = "center">
+<figure> <img src={require("../../../../../static/img/ccipher.png").default} alt="Alt text for the image" /><figcaption> Caesar Cipher Shift 3 </figcaption> </figure>
+</p>
+
+Now you have a table , according to the table above A = D, D = G, and so forth.
+
+So now:
+
+```
+Hello world :: Plaintext
+Khoor zruog :: Cipher Text
+```
+
+## Vigenère Cipher
+
+Given Message
+
+```
+Hello World
+```
+
+So now we have this Vigenère Square
+
+<p align = "center">
+<figure> <img src={require("../../../../../static/img/vcipher.png").default} alt="Alt text for the image" /><figcaption> Vigenère Square </figcaption> </figure>
+</p>
+
+With this now we make up a key
+
+```
+key = script
+```
+
+Now we make the key the same number of letters as the plaintext and then following the square find the letters matching for example "F" and "G" would turn into "L"
+
+```
+HelloWorld :: Plaintext
+ScriptScri :: Key
+zgctdpgtcl :: Ciphertext
+```
+
+## Kasiski Test
+
+If you were given a cipher text that you know is a Vigenère cipher, one test that you can do is the Kasiski Test.  
+So given a cipher text  
+
+<p>
+<strong>Ljv odtd qw ARKARK qh mg gekdnjcxm hmmfvvil lq vvwtfev bwxat jsxedu zv rrtgi atvmtzbn pavy i uhuwj wc vjagbdzjcgpn tff Gcqeae Bmn Bfhiihmjwtbjkw (RBQ), gxngiat xfizvtxjkeo, hxuwim rhvkeo, pgv ortltjg rvpequza, hxuwiqir sprtnlau rvs bfezltgl tvaehfuv, icw hgemiksvzwc mwukqcz. KEIQEM okct plkkjb xg ljv ltownfxbxfv fn iawuv azbdnj nghe c Uw-Xm-Qqlzhxdh gmglhgtbxow cel tguqlzpzw ovuqxju kw qnanu vtp kqccibgpj icw uqebgbtwkm ih wzzaibfi fvtl. </strong><br/>
+</p>
+
+You can input the text here to solve for the monogram, bigram, and trigram frequency.  
+
+In this specific case the bigram with the most frequency is **uw**.  
+
+Next you find the distances between each instance of **uw**. Then after that find the gcd of the distances and that will give you the possible key sizes and in this case it is 6.  

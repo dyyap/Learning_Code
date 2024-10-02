@@ -17,7 +17,7 @@ import TabItem from "@theme/TabItem";
 <Heading
   as={"h1"}
   className={"openapi__heading"}
-  children={"Reverse Engineering"}
+  children={"Intro"}
 >
 </Heading>
 
@@ -36,3 +36,18 @@ For most of the time in this book we will be using the English Language. If you 
 If you have ever played the game "hangman", you instinctively choose letters that the most frequency in the English language. An early way of Cryptography was using **Substitution Cryptography**. 
 This is a cryptographic method in which each letter is substituted for another letter. Examples of this are the Caesar Cipher or the Vigenère Cipher.
 
+<p align="center">
+<figure> <img src={require("../../../../static/img/frequencies.png").default} alt="Alt text for the image" /><figcaption> English Letter Distribution </figcaption> </figure>
+</p>
+
+Using the above graph if you find out what letters appear in the **plaintext** most often chances are they correlate to the above graph. 
+You can then apply the same method to **Bigrams** and **Trigrams**
+
+
+<p align="center">
+<figure> <img src={require("../../../../static/img/bf.png").default} alt="Alt text for the image" /><figcaption> Bigram Frequency </figcaption> </figure>
+</p>
+
+Another characteristic of English is the **Index of Coincidence**. It essentially is the probability in a given text, 
+if all of the letters were put in a hat how likely is it that the letters are both the same and in the English Language is is about .06.
+So if you use the **Index of Coincidence** on a cipher text and it gives .06. It is most likely a substitution cipher. 

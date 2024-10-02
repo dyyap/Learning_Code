@@ -1,0 +1,64 @@
+---
+id: Cryptography Fun
+title: "Cryptography Fun"
+description: "Cryptography Fun"
+sidebar_label: "Cryptography Fun"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Cryptography Fun"}
+>
+</Heading>
+
+
+# Enigma Machine
+
+It wouldn't be a cryptography guide if the Enigma Machine was not introduced.
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/G2_Q9FoD-oQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen><figcaption> Enigma Machine </figcaption> </iframe>
+
+
+<figure> <img src={require("../../../../static/img/enigma machine.jpg").default} alt="Alt text for the image" /><figcaption> Bigram Frequency </figcaption> </figure>
+</p>
+
+Making your messages secret in a war is one of the keys of success in winning. In World War II the Nazis had their messages encoded with this machine. 
+To win the war the allied nations had to decipher and crack the code that the Nazis were using to encode their messages. 
+
+## How it Works
+
+The box has 3 rotors with a different combination of wires to scramble the plaintext using substitution ciphers. 
+The cipher changes with every turn of the rotors and they had an option choosing 3 out of 5 rotors.
+
+```
+ABCDEFGHIJKLMNOPQRSTUVWXYZ :: Plaintext 
+EKMFLGDQVZNTOWYHXUSPAIBRCJ :: 1st rotor
+AJDKSIRUXBLHWTMCQGZNPYFVOE :: 2nd rotor
+BDFHJLCPRTXVZNYEIWGAKMUSQO :: 3rd rotor
+ESOVPZJAYQUIRHXLNFTGKDCMWB :: 4th rotor
+VZBRGITYUPSDNHLXAWMJQOFECK :: 5th rotor
+```
+
+So choosing the rotors would give  
+
+<strong> 5 x 4 x 3  = 60 options for rotors.  </strong>  
+
+You then have 3 rotors scrambling the 26 letter alphabet and you can change it with a turn.  
+
+<strong> 26<sup>3</sup> = 17576 possible combinations  </strong>  
+
+However the first rotor kicked the second rotor so you lose an option for rotor 2. This is called double-stepping.   
+
+<strong>26 x 25 x 26 = 16900 possible combinations  </strong>  
+
+In addition to the rotors there was a plug-board on the side. On the side there are plugs with the alphabet on the side. Essentially you plug in the wires and connect two letters and then the letters will be substituted. So if you connect A-Z then A is now Z and Z is now A. 

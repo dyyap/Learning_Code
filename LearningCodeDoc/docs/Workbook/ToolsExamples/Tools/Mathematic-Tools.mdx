@@ -45,6 +45,8 @@ In the actual code there is every combination of Base Changing for the purpose o
 
 For the binary, decimal, and octal coversions the division remainder method was used. For the hexadecimal translations a dictionary method was used in conjuction with the remainder for the conversion of a, b, c, d, e and f. 
 
+The main example of a base changer is also an example of using a stack to change numbers as the length of binary usually will always be greater than base 10,
+therefore having dynamic sizing for length of string is necessary
 
 ### Base 2 to 8
 ```cpp
@@ -149,4 +151,14 @@ void Base2to8(int a)
         return final;
 ```
 
-For Code Go: [here](../../../../static/RawCode/C++/Base%20Changer/BaseChanger.cpp)
+For Base Changer Example Code Go: [here](../../../../static/RawCode/C++/Base%20Changer/BaseChanger.cpp)
+
+## Max Min 
+
+C++ standard library has a maximum and minimum alread established
+
+``` cpp
+std::max(value1, value2);
+std::min(value1, value2);
+```
+For Max Min Example Code Go: [here](../../../../static/RawCode/C++/maxmin.cpp)

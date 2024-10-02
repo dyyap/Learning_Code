@@ -44,20 +44,39 @@ const sidebar: SidebarsConfig = {
               label: "Mathematic Tools",
               className: "api-method get",
             },
+          ],
+        },
+        {
+          type: "category",
+          label: "Cryptography",
+          items: [
             {
               type: "category",
-              label: "Algorithms",
-              items: 
-              [
-                {
-                  type: "doc",
-                  id: "Workbook/ToolsExamples/Tools/Algorithms/Knapsack",
-                  label: "Knapsack",
-                  className: "api-method get",
-                },
-              ]
-             
+              label: "Ciphers",
+              items: [
+              {
+                type: "doc",
+                id: "Workbook/Networking/Cryptography/Encryptions/Substitution Cyphers",
+                label: "Substitution Ciphers",
+              },
+                ],
             },
+            {
+              type: "doc",
+              id: "Workbook/Networking/Cryptography/Cryptography",
+              label: "intro",
+            },
+            {
+              type: "doc",
+              id: "Workbook/Networking/Cryptography/Encryption",
+              label: "Encryption",
+            },
+            {
+              type: "doc",
+              id: "Workbook/Networking/Cryptography/Cryptography Fun",
+              label: "Encryption",
+            },
+            
           ],
         },
  ],
