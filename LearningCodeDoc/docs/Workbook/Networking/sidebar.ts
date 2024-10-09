@@ -8,6 +8,29 @@ const sidebar: SidebarsConfig = {
     },
     {
       type: "category",
+      label: "Networking",
+      items: [
+        {
+          type: "doc",
+          id: "Workbook/Networking/Network/Networking",
+          label: "Introduction",
+        },
+            // {
+            //   type: "doc",
+            //   id: "restaurant/list-all-products",
+            //   label: "List All Products",
+            //   className: "api-method get",
+            // },
+            // {
+            //   type: "doc",
+            //   id: "restaurant/list-all-drinks",
+            //   label: "List All Drinks",
+            //   className: "api-method get",
+            // },
+          ],
+    },
+    {
+      type: "category",
       label: "Cybersecurity",
       items: [
         {

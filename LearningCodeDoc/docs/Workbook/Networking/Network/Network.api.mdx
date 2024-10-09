@@ -1,0 +1,46 @@
+---
+id: Networking
+title: "Networking"
+description: "Networking Introduction"
+sidebar_label: "Introduction"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Networking Introduction"}
+>
+</Heading>
+
+
+
+Networks is an important part of cyber security. 
+It is the way that communications between computers are connected and utilizing this communication can be used for nefarious purposes.
+
+## OSI Model
+
+
+<p align = "center">
+<figure> <img src={require("../../../../static/img/help.jpg").default} alt="Alt text for the image" /><figcaption> OSI Model </figcaption> </figure>
+</p>
+
+### Application Layer
+
+The application layer is the only layer that is closest to the end user.  POST requests and GET Requests. Usually **plaintext**. 
+- ex: HTTP, DNS, FTP, SSH
+
+### Presentaiton Layer
+
+This layer is responsible for the translation, encryption, and compression of data. Essentially this is the layer in which the information is transformed to have some type of encryption. 
+Sending data in networks heavily involve this layer.
+
+- ex. MPEG, AES, SSH, SSL

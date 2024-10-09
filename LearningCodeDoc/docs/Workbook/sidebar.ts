@@ -18,6 +18,16 @@ const sidebar: SidebarsConfig = {
         },
         {
             type: "category",
+            label: "DSP",
+            link: {
+              type: "generated-index",
+              title: "DSP Notes",
+              slug: "/category/DSP",
+            },
+            items: require("./DSP/sidebar.ts"),
+        },
+        {
+            type: "category",
             label: "Networking",
             link: {
               type: "generated-index",

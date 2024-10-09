@@ -1,0 +1,68 @@
+---
+id: Signal
+title: "Signal"
+description: "Signal"
+sidebar_label: "Signal"
+hide_title: true
+schema: true
+custom_edit_url: null
+---
+
+import DiscriminatorTabs from "@theme/DiscriminatorTabs";
+import SchemaItem from "@theme/SchemaItem";
+import SchemaTabs from "@theme/SchemaTabs";
+import Heading from "@theme/Heading";
+import TabItem from "@theme/TabItem";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Signal"}
+>
+</Heading>
+
+## Signal
+
+*Signal* is any physical quantity that varies as a function of time space or other variables. 
+
+<p align = "center">
+<figure> <img src={require("../../../../static/img/signal_1.png").default} alt="Alt text for the image" /><figcaption> Figure 1.1 example of recording of Speech Identification </figcaption> </figure>
+</p>
+
+Back in the analog days recording the signal was fairly complicated using tape.
+
+The Analog Recording Process:
+1. Sound Waves are picked up by a microphone and converted to small analog voltage called the audio signal
+2. The audio signal "mimics" volume and frequency which is amplified
+3. As the magnetic tape moves the intensity of the magnetic field is recorded on the tape
+4. The magnetic tape then gets converted into an electrical signal and hten applied to the linear amplifier
+5. The output then gets amplified through a speaker to then go to sound Waves
+
+<p align = "center">
+<figure> <img src={require("../../../../static/img/signal_2.png").default} alt="Alt text for the image" /><figcaption> Figure 1.2 Tape </figcaption> </figure>
+</p>
+
+The Digital Recording Process is Simpler:
+1. The soundwaves are converted to an electrical signal through a microphone and amplified to be used
+2. The audio signal is converted to a series of numbers through the **Analog-to-Digital** converter or **ADC**
+3. The numbers can be processed to do what you need
+4. The digital signal is then converted from **Digital-to-Analog** or **DAC** and then transmitted out through a speaker
+
+<p align = "center">
+<figure> <img src={require("../../../../static/img/signal_4.png").default} alt="Alt text for the image" /><figcaption> Figure 1.3 Digital  </figcaption> </figure>
+</p>
+
+Digital is a hell of a lot smaller than Analog, tape is leverage
+
+### Signal Math 
+
+Signal Math is a big part of signals where knowing the x and y axis is really important as showing the difference and peaks is shown to be the most important as high peaks lead to detection most of all
+Most of the time we focus on the signal as a signle independent variable. For this book the dependent variable is *amplitude* and the independent variable is *time*.  
+
+There are two natural categories of signals, **continuous-time signals** and **discrete-time signals**
+
+The speech signal is an example of a continuous time signal due to the fact that every value is defined by time. **Continuous-Time Signals** are also known as *analog signals* because the amplitude
+is analogous (proportional to the physical quantity they represent)
+
+**Discrete-Time Signals** are defined only at discrete times, however to process signals we only can use a sample of the data. 
+
